@@ -26,6 +26,7 @@ TABLE :NOT(:FIRST-CHILD) :NOT(TD:NTH-CHILD(2)):HOVER{
 <TABLE><TR><TD><TD><TD><TD><TD>
 <SCRIPT>
 fetch("_").then(A=>A.arrayBuffer().then(B=>{
+console.log(A);
 A=["Eclipse","Marske","Spilletta","Regulus",   //TT
 "Stockwell","The Barcon","Pocahontas","Glencoe",
 "Hermit","Newminster","Seclusion","Tadmor",
@@ -458,7 +459,7 @@ if(P=P.data){for(I=1683;~I;)A[I].includes(P)?(R[I>>2].style.display="",I-=1+(I&3
   for(C of E.target.textContent)S+="{"<C?C=="ー"?"%a1%bc":"%a5%"+(C.charCodeAt()-12288).toString(16):" "<C?C:"+";
   window.open(S)
 },
-B=new Int32Array(B),
+B=new Uint32Array(B),
 S="日欧米豪阿馬年父母祖",
 N=(R=T.lastChild).cloneNode(I=4);
 for(R=R.children;~I;R[I--].style.width=I?"23%":"8%")R[I].textContent=S[5+I];
