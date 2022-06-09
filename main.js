@@ -1,5 +1,5 @@
 {
-  let search_svg = document.querySelector("SVG");
+  let search_svg = document.getElementsByTagName("DIV")[0].firstChild;
   let input = search_svg.nextSibling;
   let sort_svg = search_svg.cloneNode(1);
   let info_svg = search_svg.cloneNode(1);
